@@ -1,1 +1,6 @@
+# library_files
 /node_modules
+
+# phonegap_files
+/platforms
+/plugins

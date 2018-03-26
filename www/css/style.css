@@ -12,7 +12,8 @@ body {
   vertical-align: middle;
   margin-bottom: 50px; }
   #dailyForecast .searchBar {
-    padding: 20px 0; }
+    padding: 20px 0;
+    display: none; }
     #dailyForecast .searchBar #locSearchBox {
       display: inline-block;
       width: 100%;
