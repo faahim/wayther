@@ -12,7 +12,7 @@ body {
 #dailyForecast {
 	display: flex;
 	vertical-align: middle;
-	margin-bottom: 50px;
+	height: 100vh;
 	.searchBar {
 		padding: 20px 0;
 		display: none;
@@ -34,13 +34,14 @@ body {
 	}
 	.tempBox {
 		color: #fff;
-		padding: 15px;
-		margin-top: 20px;
+		padding: 25px;
+		// margin-top: 20px;
 		// margin: -15px;
 		font-weight: bold;
-		border-radius: 8px;
+		// border-radius: 8px;
 		background: linear-gradient(160deg,#FBCA88,#EF69AD,#B236D0);
-		box-shadow: 0 0 25px 3px #bfa8bc;
+		// box-shadow: 0 0 25px 3px #bfa8bc;
+		min-height: 100vh;
 		.currentTemp {
 			font-size: 5em;
 		}
@@ -69,8 +70,8 @@ body {
 	}
 
 	.dashboard {
-		margin-top: 20px;
-		border-radius: 8px;
+		// margin-top: 20px;
+		// border-radius: 8px;
 		.dashboardDaily {
 			position: relative;
 			.expect {
