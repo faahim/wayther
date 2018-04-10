@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: "Segoe UI", "Open Sans" sans-serif;
   font-size: 1em;
@@ -11,47 +14,70 @@ body {
   display: flex;
   vertical-align: middle;
   height: 100vh; }
-  #dailyForecast .searchBar {
-    padding: 20px 0;
-    display: none; }
-    #dailyForecast .searchBar #locSearchBox {
-      display: inline-block;
-      width: 100%;
-      font-size: 1em;
-      text-align: center;
-      border: none;
-      border-radius: 3px;
-      padding: 10px;
-      box-shadow: 0 0 15px 1px #bfa8bc;
-      transition: all 0.3s; }
-      #dailyForecast .searchBar #locSearchBox:focus {
-        outline: none;
-        box-shadow: 5px 5px 30px 5px #bfa8bc; }
   #dailyForecast .tempBox {
     color: #fff;
-    padding: 25px;
+    padding: 80px 25px 25px;
     font-weight: bold;
     background: linear-gradient(160deg, #FBCA88, #EF69AD, #B236D0);
-    min-height: 100vh; }
-    #dailyForecast .tempBox .currentTemp {
+    min-height: 100vh;
+    position: relative; }
+    #dailyForecast .tempBox .swithches {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 20px 10px; }
+      #dailyForecast .tempBox .swithches ul {
+        padding-left: 0;
+        list-style-type: none; }
+        #dailyForecast .tempBox .swithches ul li {
+          width: 33.3%;
+          float: left;
+          font-weight: bold;
+          font-size: 1.2em;
+          padding: 3px 0;
+          cursor: pointer; }
+          #dailyForecast .tempBox .swithches ul li.active-page {
+            border-bottom: 2px solid #fff; }
+    #dailyForecast .tempBox .today .currentTemp {
       font-size: 5em; }
-    #dailyForecast .tempBox .unit {
+    #dailyForecast .tempBox .today .unit {
       font-size: 3em; }
-    #dailyForecast .tempBox p.m0 {
+    #dailyForecast .tempBox .today p.m0 {
       margin: 0; }
-    #dailyForecast .tempBox .convertToggle .icon {
+    #dailyForecast .tempBox .today .convertToggle .icon {
       position: relative;
       top: 4px; }
-    #dailyForecast .tempBox .weatherCondition {
+    #dailyForecast .tempBox .today .weatherCondition {
       font-size: 3em; }
-    #dailyForecast .tempBox .tempBoxSubInfo {
+    #dailyForecast .tempBox .today .tempBoxSubInfo {
       font-size: 0.8em;
       padding: 20px 0 0; }
-      #dailyForecast .tempBox .tempBoxSubInfo p {
+      #dailyForecast .tempBox .today .tempBoxSubInfo p {
         margin: 0; }
-  #dailyForecast .dashboard .dashboardDaily {
+    #dailyForecast .tempBox .location {
+      display: none; }
+      #dailyForecast .tempBox .location .searchBar {
+        padding: 20px 0; }
+        #dailyForecast .tempBox .location .searchBar #locSearchBox {
+          display: inline-block;
+          width: 100%;
+          font-size: 1em;
+          text-align: center;
+          border: none;
+          border-radius: 3px;
+          padding: 10px;
+          box-shadow: 0 0 15px 1px #bfa8bc;
+          transition: all 0.3s; }
+          #dailyForecast .tempBox .location .searchBar #locSearchBox:focus {
+            outline: none;
+            box-shadow: 5px 5px 30px 5px #bfa8bc; }
+
+#dashboard-container .dashboard {
+  margin-top: 20px; }
+  #dashboard-container .dashboard .dashboardDaily {
     position: relative; }
-    #dailyForecast .dashboard .dashboardDaily .expect {
+    #dashboard-container .dashboard .dashboardDaily .expect {
       height: 300px;
       padding: 20px;
       background: linear-gradient(45deg, #30496B, #30B8D2);
@@ -61,18 +87,18 @@ body {
       color: #fff;
       position: relative;
       box-shadow: 0 0 25px 3px #bfa8bc; }
-      #dailyForecast .dashboard .dashboardDaily .expect #expectIcon {
+      #dashboard-container .dashboard .dashboardDaily .expect #expectIcon {
         position: absolute;
         left: 102px;
         top: 35px; }
-      #dailyForecast .dashboard .dashboardDaily .expect p {
+      #dashboard-container .dashboard .dashboardDaily .expect p {
         position: relative;
         top: 20px; }
-    #dailyForecast .dashboard .dashboardDaily .thin {
+    #dashboard-container .dashboard .dashboardDaily .thin {
       font-size: 1em;
       font-weight: bold;
       text-transform: uppercase; }
-    #dailyForecast .dashboard .dashboardDaily .tempMaxBox, #dailyForecast .dashboard .dashboardDaily .tempMinBox {
+    #dashboard-container .dashboard .dashboardDaily .tempMaxBox, #dashboard-container .dashboard .dashboardDaily .tempMinBox {
       height: 150px;
       border-radius: 50%;
       position: relative;
@@ -83,30 +109,30 @@ body {
       align-items: center;
       z-index: 2;
       box-shadow: 0 0 25px 1px rgba(79, 75, 78, 0.6); }
-      #dailyForecast .dashboard .dashboardDaily .tempMaxBox p, #dailyForecast .dashboard .dashboardDaily .tempMinBox p {
+      #dashboard-container .dashboard .dashboardDaily .tempMaxBox p, #dashboard-container .dashboard .dashboardDaily .tempMinBox p {
         display: inline-block; }
-    #dailyForecast .dashboard .dashboardDaily .tempMaxBox {
+    #dashboard-container .dashboard .dashboardDaily .tempMaxBox {
       background: linear-gradient(45deg, #F32F8E, #B236D0);
       left: 40px; }
-      #dailyForecast .dashboard .dashboardDaily .tempMaxBox p {
+      #dashboard-container .dashboard .dashboardDaily .tempMaxBox p {
         margin: 0 auto 40px; }
-    #dailyForecast .dashboard .dashboardDaily .tempMinBox {
+    #dashboard-container .dashboard .dashboardDaily .tempMinBox {
       background: linear-gradient(45deg, #833DB8, #B998DD);
       top: 150px;
       right: 40px; }
-      #dailyForecast .dashboard .dashboardDaily .tempMinBox p {
+      #dashboard-container .dashboard .dashboardDaily .tempMinBox p {
         margin: 40px auto 0; }
-  #dailyForecast .dashboard .sunTimes {
+  #dashboard-container .dashboard .sunTimes {
     margin-top: 5%;
     font-weight: bold;
     font-size: 0.8em; }
-  #dailyForecast .dashboard .weatherQuote {
+  #dashboard-container .dashboard .weatherQuote {
     margin-top: 5%;
     font-size: 1em;
     font-weight: bold; }
-  #dailyForecast .dashboard .weeklyButton {
+  #dashboard-container .dashboard .weeklyButton {
     margin-top: 5%; }
-    #dailyForecast .dashboard .weeklyButton a {
+    #dashboard-container .dashboard .weeklyButton a {
       padding: 15px;
       border-radius: 5px;
       text-decoration: none;
@@ -115,9 +141,9 @@ body {
       background-image: linear-gradient(220deg, #ec77ab, #7873f5);
       box-shadow: 0 0 25px 3px #bfa8bc;
       transition: 0.5s; }
-      #dailyForecast .dashboard .weeklyButton a:hover {
+      #dashboard-container .dashboard .weeklyButton a:hover {
         box-shadow: 5px 5px 25px 6px #bfa8bc; }
-      #dailyForecast .dashboard .weeklyButton a i {
+      #dashboard-container .dashboard .weeklyButton a i {
         font-size: 1.2em;
         position: relative;
         top: 3px; }
