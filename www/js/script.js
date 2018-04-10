@@ -161,6 +161,25 @@ $(document).ready(function() {
 
 	//Calling the function to locate user and fetch the data
 	locateYou();
+	
+
+	//Function for switching between pages
+	function pageSwitcher() {
+		$(".page-switch").each(
+			function() {
+				$(this).click(function() {
+					$(".active-page").removeClass("active-page");
+					$(this).addClass("active-page");
+					var choosenPage = $(this).data("page");
+					$(".page-unit").hide();
+					console.log(".page-unit."+choosenPage);
+					$(".page-unit."+choosenPage).fadeIn();
+				})
+			}
+		);
+	}
+
+	pageSwitcher();
 
 	//Function for converting UNIX time to Local Time
 	function unixToTime(unix) {
@@ -221,4 +240,6 @@ $(document).ready(function() {
     	});
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
+
 });
+
