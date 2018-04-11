@@ -104,7 +104,86 @@ body {
 		}
 
 		.forecast {
-
+			display: none;
+			.weeklyForecast {
+				padding: 20px 0 30px;
+				h3 {
+					// line-height: 30px;
+					margin: 20px 0;
+					font-size: 1.2em;
+					font-weight: bold;
+				}
+				.weekRows {
+					margin: 0;
+					.dayCard {
+						box-shadow: 0 0 25px 3px #bfa8bc;
+						overflow: hidden;
+						border-radius: 5px;
+						margin-bottom: 18px;
+						p {
+							display: inline-block;
+						}
+						.dayIconHighlight {
+							background-color: #1343B9;
+							color: #fff;
+							padding: 30px 10px 10px;
+							.dayMaxMin {
+								position: relative;
+								p{
+									position: absolute;
+									&:first-child {
+										left: 0;
+									}
+									&:last-child {
+										right: 0;
+										i {
+											position: relative;
+											top: 5px;
+										}
+									}
+								}
+							}
+						}
+						.dayInfoHighlight {
+							background-color: #fff;
+							color: #333;
+							padding: 10px;
+							.weekDay {
+								p {
+									font-size: 1.5em;
+									font-weight: bold;
+								}
+							}
+							.weekDaySummary {
+								height: 50px;
+								margin-bottom: 20px;
+								p {
+									margin: 0;
+								}
+							}
+							.weekDaySun {
+								p {
+									// margin-right: 20px;
+									// padding-top: 5px;
+									&:last-child {
+										margin-right: 0;
+										margin-left: 20px;
+									}
+								}
+							}
+							.weekDayWindnHumidity {
+								p {
+									margin-right: 10px;
+									font-size: 0.8em;
+									&:last-child {
+										margin-right: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -200,82 +279,6 @@ body {
 					font-size: 1.2em;
 					position: relative;
 					top: 3px;
-				}
-			}
-		}
-	}
-}
-
-#weeklyForecast {
-	padding: 20px 0 30px;
-	h3 {
-		line-height: 50px;
-		margin: 20px 0 30px;
-	}
-	.weekRows {
-		margin: 50px 0;
-		.dayCard {
-			box-shadow: 0 0 25px 3px #bfa8bc;
-			overflow: hidden;
-			border-radius: 5px;
-			p {
-				display: inline-block;
-			}
-			.dayIconHighlight {
-				background-color: #1343B9;
-				color: #fff;
-				padding: 30px 10px 10px;
-				.dayMaxMin {
-					position: relative;
-					p{
-						position: absolute;
-						&:first-child {
-							left: 0;
-						}
-						&:last-child {
-							right: 0;
-							i {
-								position: relative;
-								top: 5px;
-							}
-						}
-					}
-				}
-			}
-			.dayInfoHighlight {
-				background-color: #fff;
-				padding: 10px;
-				.weekDay {
-					p {
-						font-size: 1.5em;
-						font-weight: bold;
-					}
-				}
-				.weekDaySummary {
-					height: 50px;
-					margin-bottom: 20px;
-					p {
-						margin: 0;
-					}
-				}
-				.weekDaySun {
-					p {
-						margin-right: 20px;
-						padding-top: 5px;
-						&:last-child {
-							margin-right: 0;
-							margin-left: 20px;
-						}
-					}
-				}
-				.weekDayWindnHumidity {
-					p {
-						margin-right: 10px;
-						font-size: 0.8em;
-						&:last-child {
-							margin-right: 0;
-						}
-					}
 				}
 			}
 		}

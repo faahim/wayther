@@ -72,6 +72,58 @@ body {
           #dailyForecast .tempBox .location .searchBar #locSearchBox:focus {
             outline: none;
             box-shadow: 5px 5px 30px 5px #bfa8bc; }
+    #dailyForecast .tempBox .forecast {
+      display: none; }
+      #dailyForecast .tempBox .forecast .weeklyForecast {
+        padding: 20px 0 30px; }
+        #dailyForecast .tempBox .forecast .weeklyForecast h3 {
+          margin: 20px 0;
+          font-size: 1.2em;
+          font-weight: bold; }
+        #dailyForecast .tempBox .forecast .weeklyForecast .weekRows {
+          margin: 0; }
+          #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard {
+            box-shadow: 0 0 25px 3px #bfa8bc;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 18px; }
+            #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard p {
+              display: inline-block; }
+            #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayIconHighlight {
+              background-color: #1343B9;
+              color: #fff;
+              padding: 30px 10px 10px; }
+              #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin {
+                position: relative; }
+                #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p {
+                  position: absolute; }
+                  #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:first-child {
+                    left: 0; }
+                  #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:last-child {
+                    right: 0; }
+                    #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:last-child i {
+                      position: relative;
+                      top: 5px; }
+            #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight {
+              background-color: #fff;
+              color: #333;
+              padding: 10px; }
+              #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDay p {
+                font-size: 1.5em;
+                font-weight: bold; }
+              #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySummary {
+                height: 50px;
+                margin-bottom: 20px; }
+                #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySummary p {
+                  margin: 0; }
+              #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun p:last-child {
+                margin-right: 0;
+                margin-left: 20px; }
+              #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDayWindnHumidity p {
+                margin-right: 10px;
+                font-size: 0.8em; }
+                #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDayWindnHumidity p:last-child {
+                  margin-right: 0; }
 
 #dashboard-container .dashboard {
   margin-top: 20px; }
@@ -147,57 +199,6 @@ body {
         font-size: 1.2em;
         position: relative;
         top: 3px; }
-
-#weeklyForecast {
-  padding: 20px 0 30px; }
-  #weeklyForecast h3 {
-    line-height: 50px;
-    margin: 20px 0 30px; }
-  #weeklyForecast .weekRows {
-    margin: 50px 0; }
-    #weeklyForecast .weekRows .dayCard {
-      box-shadow: 0 0 25px 3px #bfa8bc;
-      overflow: hidden;
-      border-radius: 5px; }
-      #weeklyForecast .weekRows .dayCard p {
-        display: inline-block; }
-      #weeklyForecast .weekRows .dayCard .dayIconHighlight {
-        background-color: #1343B9;
-        color: #fff;
-        padding: 30px 10px 10px; }
-        #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin {
-          position: relative; }
-          #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p {
-            position: absolute; }
-            #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:first-child {
-              left: 0; }
-            #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:last-child {
-              right: 0; }
-              #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:last-child i {
-                position: relative;
-                top: 5px; }
-      #weeklyForecast .weekRows .dayCard .dayInfoHighlight {
-        background-color: #fff;
-        padding: 10px; }
-        #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDay p {
-          font-size: 1.5em;
-          font-weight: bold; }
-        #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySummary {
-          height: 50px;
-          margin-bottom: 20px; }
-          #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySummary p {
-            margin: 0; }
-        #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun p {
-          margin-right: 20px;
-          padding-top: 5px; }
-          #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun p:last-child {
-            margin-right: 0;
-            margin-left: 20px; }
-        #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDayWindnHumidity p {
-          margin-right: 10px;
-          font-size: 0.8em; }
-          #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDayWindnHumidity p:last-child {
-            margin-right: 0; }
 
 #footer .love {
   margin: 10px auto;
