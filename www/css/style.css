@@ -6,6 +6,8 @@ body {
   font-size: 1em;
   background-color: #E9E9E9;
   margin: 0; }
+  body p {
+    margin-bottom: 5px; }
 
 .icon {
   font-size: 1.5em; }
@@ -18,7 +20,7 @@ body {
     height: 100vh;
     overflow: auto;
     color: #fff;
-    padding: 80px 20px 25px;
+    padding: 70px 20px 25px;
     font-weight: bold;
     background: linear-gradient(160deg, #FBCA88, #EF69AD, #B236D0);
     min-height: 100vh;
@@ -42,19 +44,27 @@ body {
           #dailyForecast .tempBox .swithches ul li.active-page {
             border-bottom: 2px solid #fff; }
     #dailyForecast .tempBox .today .currentTemp {
-      font-size: 5em; }
+      font-size: 3.5em; }
+    #dailyForecast .tempBox .today .feels {
+      margin-bottom: 0; }
     #dailyForecast .tempBox .today .unit {
-      font-size: 3em; }
+      font-size: 2.5em; }
     #dailyForecast .tempBox .today p.m0 {
       margin: 0; }
     #dailyForecast .tempBox .today .convertToggle .icon {
       position: relative;
       top: 4px; }
+    #dailyForecast .tempBox .today .day-summery p {
+      font-weight: normal;
+      margin-bottom: 15px; }
     #dailyForecast .tempBox .today .weatherCondition {
-      font-size: 3em; }
+      font-size: 2em; }
     #dailyForecast .tempBox .today .tempBoxSubInfo {
       font-size: 0.8em;
-      padding: 20px 0 0; }
+      padding: 10px 0 0; }
+      #dailyForecast .tempBox .today .tempBoxSubInfo.highLowTemp .ion-arrow-graph-down-right {
+        position: relative;
+        top: 3px; }
       #dailyForecast .tempBox .today .tempBoxSubInfo p {
         margin: 0; }
     #dailyForecast .tempBox .location {
@@ -107,7 +117,7 @@ body {
               #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDay p {
                 font-size: 1.3em; }
               #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySummary {
-                margin-bottom: 10px; }
+                margin-bottom: 3px; }
                 #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySummary p {
                   font-weight: normal;
                   font-size: 0.9em;
@@ -115,8 +125,10 @@ body {
               #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun p {
                 font-weight: normal;
                 font-size: .8em; }
+                #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun p:first-child {
+                  margin-right: 10px; }
                 #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun p:last-child {
-                  margin-right: 0; }
+                  margin-left: 10px; }
               #dailyForecast .tempBox .forecast .weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDayWindnHumidity p {
                 font-weight: normal;
                 margin-right: 10px;
@@ -145,10 +157,6 @@ body {
       #dashboard-container .dashboard .dashboardDaily .expect p {
         position: relative;
         top: 20px; }
-    #dashboard-container .dashboard .dashboardDaily .thin {
-      font-size: 1em;
-      font-weight: bold;
-      text-transform: uppercase; }
     #dashboard-container .dashboard .dashboardDaily .tempMaxBox, #dashboard-container .dashboard .dashboardDaily .tempMinBox {
       height: 150px;
       border-radius: 50%;
