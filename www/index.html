@@ -71,7 +71,30 @@
 						<p class="m0"><span class="currentTemp"></span><span class="unit">°C</span></p>
 						<p class="feels"><i class="wi wi-barometer"></i> Feels Like: <span class="feelsLike">...</span></p>
 						<p class="convertToggle">°C <i class="icon ion-toggle toggleIcon"></i> °F</p>
-						<div class="row tempBoxSubInfo">
+						<div class="day-summery">
+							<p class="text-center thin"><span class="todaySummary">...</span></p>
+						</div>
+						<div class="row tempBoxSubInfo highLowTemp">
+							<div class="col">
+								<p><i class="icon ion-arrow-graph-up-left"></i>
+									<span class="tempMax text-left"></span>
+								</p>
+							</div>
+							<div class="col">
+								<p><span class="tempMin text-right"></span>
+									<i class="icon ion-arrow-graph-down-right"></i>
+								</p>
+							</div>
+						</div>
+						<div class="row tempBoxSubInfo sunTimes">
+							<div class="col">
+								<p><i class="wi wi-sunrise"></i> <span class="sunriseTime"></span></p>
+							</div>
+							<div class="col">
+								<p><i class="wi wi-sunset"></i> <span class="sunsetTime"></span></p>
+							</div>
+						</div>
+						<!-- <div class="row tempBoxSubInfo">
 							<div class="col">
 								<p><i class="wi wi-windy"></i>
 									Wind: <span class="windSpeed">...</span> km/s
@@ -82,7 +105,7 @@
 									Humidity: <span class="humidity">...</span> %
 								</p>
 							</div>
-						</div>
+						</div> -->
 					</div>
 
 					<div class="page-unit location">
